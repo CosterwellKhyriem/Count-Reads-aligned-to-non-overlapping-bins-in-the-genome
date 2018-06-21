@@ -14,7 +14,7 @@ parser.add_argument('--bam',dest='input_bam_file',required=True, help='Input bam
 parser.add_argument('--binSize',dest='binSize',required=True,help='Size of none overlapping bin in bases; required')
 parser.add_argument('--outFile',dest='outputFileName',required=True, help='Name of the output file; required')
 parser.add_argument('--RPM',dest='readsPerMillion',type=bool,default=False, help=' Reads Per Million normalization, not default, set it to True if required')
-parser.add_argument('--makeplot',dest='makeLinePlot',type=bool,default=False, help='Make line plots for each bin per chromosome, not default, set it to True if required')
+parser.add_argument('--makeplot',dest='makeLinePlot',type=bool,default=False, help='Make line plots for each bin genome wide, not default, set it to True if required')
 parser.add_argument('--readSize',dest='manualReadSizeInput',type=bool,default=False, help='Read Size to be input maulally, not default, supply the number if required.\nBy default, the program with take the first 10000 reads length and use the median read length for normalization')
 
 if len(sys.argv)==1:
